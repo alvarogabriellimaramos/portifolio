@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand',sans-serif;
+}
+
+/*Configuraçaõ do cabeçalho*/
+header{
+    background-color: #24292F;
+    max-width: 100%;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+#ul-1 > li{
+    margin:10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#ul-1  a {
+    color: white;
+    text-decoration: none;
+}
+a > img:hover{
+    filter: drop-shadow(1px 1px 1px white);
+}
+#ul-1 a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+.nav-2{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.nav > #ul-2{
+    display: flex;
+}
+.nav-2 li {
+    margin: 10px;
+}
+.nav-2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-2 a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+/*Configuração do corpo */
+main{
+    max-width: 70%;
+    min-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 0 0 0.1px black;
+    height: 100%;
+}
+main h2{
+    font-size:2em ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: -10px;
+    margin: 10px;
+}
+main .a-1{
+    color: rgb(105, 105, 235);
+    background-color: rgba(12, 12, 12, 0.062);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 2px;
+}
+main .txt{
+    color: #5A8571;
+    font-size: 15px;
+}
+main .a-1:hover{
+    text-decoration: underline;
+}
+main p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-size: 1.3rem;
+}
+main .strong{
+    color:#56616d;
+    font-weight: 550;
+}
+hr{
+    opacity: 0.2;
+}
+main .p-strong{
+    padding-top: 50px;
+    font-size: 1.5em;
+}
+
+.frontend > p{
+    margin-top: 10px;
+}
+.frontend  a {
+    text-decoration: none ;
+    color: rgb(67, 67, 252);
+}
+.frontend a:hover{
+    text-decoration: underline;
+}
+.coderbyte{
+    position: relative;
+    margin-top: 50px;
+}
+.coderbyte p {
+    margin-top: 15px;
+}
+main a{
+    color: rgb(67, 67, 252);
+    text-decoration: none;
+}
+main a:hover{
+    text-decoration: underline;
+}
+.freecode{
+    margin-top:50px ;
+
+}
+.freecode p {
+    margin-top:10px ;
+}
+.codewell{
+    margin-top: 50px;
+}
+.js30{
+    margin-top: 50px;
+}
+.js30 p {
+    margin-top: 10px;
+}
+.cssbatlle{
+    margin-top: 50px;
+}
+.agradecimentos{
+    margin-top: 30px;
+}
+.link-insta{
+    box-shadow: -5px 0 0 0 #D0D7DE;
+    margin-left: 10px;
+    margin-top:10px ;
+}
+.link-insta a{
+    margin-left: 20px;
+}
+.link-insta:last-child{
+    margin-top: 20px;
+}
+main .p-sem-div{
+    margin-top: 20px;
+}
+main .comentarios {
+    margin-top: 40px;
+    padding: 30px;
+    box-shadow: 0 0 1px black;
+    border-radius: 5px;
+}
+.comentarios input {
+    padding: 10px;
+    border: none;
+    background-color: #F3F4F6;
+    font-weight: bold;
+    box-shadow: 0 0 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input:hover{
+    background-color: #24292f10;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+@media  screen and (min-width:200px) and (max-width:500px) {
+    footer{
+        max-width: 100%;
+        min-width: 500px;
+    }
+    
+}

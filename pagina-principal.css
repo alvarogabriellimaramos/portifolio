@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+:root{
+    --font-1:'Poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-1);
+}
+
+header {
+    position: sticky;
+    top: -1px;
+    background-color: #000612;
+    max-width: 100%;
+    min-width: 500px;
+    display: flex;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+header h1 {
+    position: relative;
+    top: 20px;
+    width: 100%;
+}
+header > nav{
+    top: -1px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+   
+}
+nav > #ul-h {
+    position: relative;
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.027);
+
+}
+header .div-photo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 50%;
+
+}
+header .myphoto{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: 0.6s;
+}
+
+#ul-h > li {
+    position: relative;
+    top: -10px;
+    margin: 10px;
+}
+#ul-h img{
+    position: relative;
+    bottom: -10px;
+    margin: 5px;
+}
+#ul-h a {
+    text-decoration: none;
+    text-align: center;
+    padding: 13px;
+    border-radius: 5px;
+    color: #d6cfe2;
+    transition: 0.7s;
+}
+#ul-h a:hover {
+    background-color: rgba(255, 255, 255, 0.048);
+
+}
+
+#ul-h #github{
+    background-color: #02205c;
+    border-radius: 50%;
+}
+
+#ul-h #lua:hover{
+    filter: drop-shadow(0 0 0.80px white);
+    background-color: transparent;
+}
+
+@media screen and (min-width:200px) and (max-width:700px) {
+    nav #ul-h{
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.027);
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+    header h1 {
+        position: relative;
+        top: 50px;
+    }
+    footer{
+        max-width:100%;
+        min-width: 500px;
+    }
+    
+}
+main{
+    max-width: 100%;
+    min-width: 500px;
+    padding: 50px;
+    line-height: 2.5rem;
+}
+main img{
+    box-shadow: 1px 0 3px black;
+    border-radius: 10px;
+}
+main .historia{
+    margin-bottom: 15px;
+}
+.historia h2{
+    margin-bottom:10px ;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+}
+main p {
+    font-size: 1.2em;
+}
+main a:hover{
+    text-decoration: underline;
+}
+.trocador-cores{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .h2{
+    background-image: linear-gradient( to right ,rgba(0, 0, 0, 0.151),black);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+main .div-trocador-cores{
+    margin-bottom: 20px;
+    
+}
+
+.div-contador-cliques img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-replicar-tabsnews img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-replicar-tabsnews p {
+    margin-top: 10px;
+}
+main .p{
+    margin-top: 20px;
+}
+main .p::first-letter{
+    font-size: 1.5em;
+}
+footer{
+    position: relative;
+    max-width: 100%;
+    min-width: 500px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+footer img {
+    margin: 5px;
+}
+footer .face{
+    filter: drop-shadow(0 0 2px blue);
+}
+footer .insta{
+    filter: drop-shadow(0 0 2px pink);
+}
+footer span{
+    position: relative;
+   
+}
+footer a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+footer p {
+    text-align: center;
+    margin-top: 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
