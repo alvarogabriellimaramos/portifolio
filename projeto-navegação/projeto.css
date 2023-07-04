@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+:root{
+    --font-1:'Poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-1);
+}
+header{
+    background-color: #000612;
+    position: sticky;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    min-width: 500px;
+    padding:10px;
+}
+header h1 {
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+header > nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+    font-weight: bold;
+}
+nav > #ul-1{
+    position: relative;
+    display: flex;
+    list-style: none;
+
+    background-color: rgba(255, 255, 255, 0.027);
+    border-radius: 5px;
+    text-align: center;
+}
+#ul-1 a {
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+#ul-1 span {
+    position:relative;
+    top: -10px;
+    
+}
+#ul-1 .span-git{
+    position: relative;
+    top: -3px;
+}
+#ul-1 > li{
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.7s;
+   
+}
+#ul-1 > li:hover{
+    background-color: rgba(255, 255, 255, 0.116);
+}
+header #li-moon:hover{
+    background-color: transparent;
+}
+header #li-moon{
+    background-color: white;
+}
+header #moon:hover{
+    filter: drop-shadow(0 0 1px white );
+}
+@media screen and (min-width:200px) and (max-width:700px){
+    header #ul-1{
+        display: inline-block;
+    }
+    footer {
+        max-width: 100%;
+        min-width: 500px;
+    }
+}
+main{
+    font-size: 1.2em;
+    line-height: 2.5em;
+    padding: 10px;
+    max-width: 100%;
+    min-width: 500px;
+}
+main .p-1{
+    margin-bottom: 10px;
+}
+main a {
+    text-decoration: none;
+    margin: 5px;
+    background-color: rgba(0, 0, 255, 0.219);
+    padding: 5px;
+    border-radius: 5px;
+}
+main a:hover{
+    text-decoration: underline;
+}
+#sistema-pasta h2 {
+    background-image: linear-gradient(to right,rgba(0, 0, 255, 0.233),rgb(0, 0, 255));
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+#sistema-pasta .p-strong {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#sistema-pasta .pasta {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    box-shadow: 1px 2px 4px black;
+}
+#div-quiz img{
+    width: 100%;
+    margin-top:20px;
+    margin-bottom: 20px;
+    height: auto;
+    box-shadow: 1px 2px 4px black;
+}
+#div-quiz{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#div-snike{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#div-snike img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 4px black;
+}
+footer{
+    background-color: black;
+    max-width: 100%;
+    min-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+footer .face{
+    filter: drop-shadow(0 0 0.80px blue);
+    border-radius: 5px;
+}
+footer .insta{
+    filter: drop-shadow(0 0 0.80px pink);
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+}

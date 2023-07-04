@@ -25,6 +25,7 @@ header h1 {
     position: relative;
     top: 20px;
     width: 100%;
+    text-shadow: 2px 3px 5px black;
 }
 header > nav{
     top: -1px;
@@ -61,8 +62,13 @@ header .myphoto{
 
 #ul-h > li {
     position: relative;
-    top: -10px;
     margin: 10px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+#ul-h >li:hover{
+    background-color: rgba(255, 255, 255, 0.048);
+
 }
 #ul-h img{
     position: relative;
@@ -70,27 +76,27 @@ header .myphoto{
     margin: 5px;
 }
 #ul-h a {
+    position: relative;
+    top: -8px;
     text-decoration: none;
     text-align: center;
-    padding: 13px;
-    border-radius: 5px;
+    padding: 10px;
     color: #d6cfe2;
-    transition: 0.7s;
 }
-#ul-h a:hover {
-    background-color: rgba(255, 255, 255, 0.048);
 
-}
 
 #ul-h #github{
     background-color: #02205c;
     border-radius: 50%;
 }
-
-#ul-h #lua:hover{
-    filter: drop-shadow(0 0 0.80px white);
-    background-color: transparent;
+#ul-h > #li-1{
+    background-color: white;
 }
+#ul-h > #li-1:hover{
+    background-color: transparent;
+    filter: drop-shadow(0 0 0.80px white);
+}
+
 
 @media screen and (min-width:200px) and (max-width:700px) {
     nav #ul-h{
