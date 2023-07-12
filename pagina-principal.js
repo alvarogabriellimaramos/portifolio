@@ -22,6 +22,8 @@ lua.addEventListener('click',function(){
         document.body.style.color = 'black'
         sol.style.display = 'none'
         lua.style.display = 'inline-block'
+        li_1.style.backgroundColor = 'white'
     })
+    li_1.style.backgroundColor = 'transparent'
     li_1.appendChild(sol)
 })
