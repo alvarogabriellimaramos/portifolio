@@ -18,6 +18,13 @@ header{
     background-color: #242041;
     margin-bottom: 10px;
 }
+header .div-img-header{
+    width: 100%;
+    text-align: center;
+}
+.div-img-header img{
+    border-radius: 50%;
+}
 header h1 {
     color: white;
     width: 100%;
