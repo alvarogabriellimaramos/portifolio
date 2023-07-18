@@ -10,7 +10,7 @@
     font-family: var(--font-1);
 }
 header{
-    background-color: #000612;
+    background-color: #242041;
     position: sticky;
     top: -1px;
     display: flex;
@@ -70,15 +70,7 @@ nav > #ul-1{
 #ul-1 > li:hover{
     background-color: rgba(255, 255, 255, 0.116);
 }
-header #li-moon:hover{
-    background-color: transparent;
-}
-header #li-moon{
-    background-color: white;
-}
-header #moon:hover{
-    filter: drop-shadow(0 0 1px white );
-}
+
 @media screen and (min-width:200px) and (max-width:700px){
     header #ul-1{
         display: inline-block;

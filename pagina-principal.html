@@ -2,75 +2,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5272/5272056.png" type="image/x-icon">
     <link rel="stylesheet" href="pagina-principal.css">
     <title>Portífolio</title>
 </head>
 <body>
     <header>
-        <h1>Bem Vindo ao meu portífolio </h1>
-        <div class="div-photo"><img src="img/myphoto.jpeg" alt="Minha foto"  class="myphoto"></div>
+        <h1>Bem Vindo ao meu Portífolio</h1>
+        <div class="div-img-header">
+            <img src="img/myphoto.jpeg" alt="Myphoto" width="100">
+        </div>
         <nav>
-            <ul id="ul-h" >
-                <li >
+            <ul class="ul-1">
+                <li class="li" id="li-projetos">
                     <a href="projeto-navegação/projeto.html" >
-                        <img src="https://cdn-icons-png.flaticon.com/512/5956/5956592.png" width="30"> Projetos
+                        <img src="https://images.vexels.com/media/users/3/166477/isolated/preview/9bb722f0e85ddbc1ce0f064534fd2311-icone-da-linguagem-de-programacao-python.png" width="30"> <span>Projetos Python</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="https://github.com/alvarogabriellimaramos" target="_blank" rel="external">
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub icon" width="30" id="github"> GitHub
-                    </a>
-                </li>
-                <li id="li-1">
-                    <a href="#" class="a-moon" id="lua">
-                        <img src="https://cdn-icons-png.flaticon.com/512/94/94756.png" alt="moon icon" width="30" id="moon"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Icone github" width="30"> <span>GitHub</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="historia">
-            <h2>Um pouco sobre mim </h2>
-            <p>Olá me chamo <strong>Álvaro Gabriel </strong> sou um programador iniciante,estudo programação a mais de 8 meses, e atualmente as principais tecnologias que ando estudando muito é <strong><a href="https://html.spec.whatwg.org/" target="_blank" rel="external"> HTML </strong> <strong> <a href="https://www.w3.org/Style/CSS/current-work" target="_blank" rel="external">  CSS </a></strong>,também estou estudando muito <strong><a href="https://tc39.es/ecma262/" target="_blank" rel="external"> JavaScript</a></strong> ,sempre gostei de programação desde de quando eu era pequeno  </p>
+        <div class="sobre-mim">
+            <h2 class="h2" id="h2">Um pouco sobre mim</h2>
+            <p class="p">Olá,me chamo <strong class="strong">Alvaro Gabriel</strong> e sou um programador iniciante e estudo programação a mais de 8 meses,sou estudante das tecnologias <strong>HTML</strong>,<strong>CSS</strong> e <strong >JavaScript</strong>,também estudo um pouco de <strong>Python</strong> no meu tempo livre,mas atualmente meu foco são essas três tecnologias acima. Sempre gostei de programação e a minha primeira linguagem de programação que eu realmente aprendi foi a linguagem <strong>Python</strong>,essa linguagem me influenciou muito nos meus estudos e foi com ela que eu conseguir desenvolver meus primeiros projetos um pouco mais complexos.Depois de um tempo comecei a estudar <strong>JavaScript</strong> e também comecei a desenvolver meus projetos web.</p>
+            <p>Embaixo irá está alguns projetos que fiz utilizando <strong>JavaScript</strong>
+            </p>
         </div>
         <div class="projetos">
-            <h2 class="h2" id="h2">Projetos</h2>
-            <div class="div-trocador-cores">
-                <p> ( 1 ) - Projeto Trocador de cores </p>
-                <img src="img/trocador-cores-img.png" alt="imagem trocador cores" class="trocador-cores">
-                <p>Esse projeto foi relativamente simples e foi um dos meus primeiros projetos trabalhado com <strong><a href="https://tc39.es/ecma262/" target="_blank" rel="external"> JavaScript</a></strong>, projeto tem dois botões,um que irá trocar a cor do body (corpo principal) e outro irá trocar a cor do container(corpo menor). <a href="projetos/trocador_cores/index.html" target="_blank" rel="external">Clique aqui para acessar </a></p>
+            <h2 id="h2-js">Projetos JavaScript 
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="Icone js" width="20" style="box-shadow: 0 0 2px black;" class="img-js">
+            </h2> 
+            <div class="trocador-cores" >
+                <strong class="str" id="str">( 1 ) - Projeto trocador de cores <span>#</span>
+                </strong>
+                <p>Esse foi um simples projeto que fiz utilizando <strong>JavaScript</strong>,foi um dos meus primeiros projetos com <strong>JavaScript</strong>,é um projeto basicamente muito simples e é um projeto em que a maioria dos programadores iniciantes aptar em fazer-lo.</p>
+                <strong class="str">Aqui está um imagem do projeto</strong>
+                <img src="img/trocador-cores-img.png" alt="Imagem trocador de cores">
+                <p>Esse projeto,como podemos ver na imagem,tem dois botões um para trocar a cor do body (corpo principal da pagina) e outro para trocar a cor do container (caixa menor) <a href="projetos/trocador_cores/index.html">Clique aqui para acessar</a></p>
             </div>
-            <div class="div-contador-cliques">
-                <p>( 2 ) - Projeto Contador de cliques </p>
-                <img src="img/contador-cliques.png" alt="imagem contador cliques">
-                <p>Esse projeto também é um projeto bem simples,mas quebrei um pouco a cabeça para fazer a logica por trás do projeto kkk,esse projeto foi muito importante para que eu pudesse entender um pouco mais sobre como funciona a linguagem <a href="https://tc39.es/ecma262/" target="_blank" rel="external">JavaScript</a> esse projeto também tem dois botões,um irá contar os cliques e outro irá resetar os cliques. 
-                    <a href="projetos/contandor_cliques/index.html" target="_blank" rel="external"> Clique aqui para acessar</a>
-                </p>
+            <div class="contador-cliques" id="cliques">
+                <strong class="str" > ( 2 ) - Projeto contador de cliques
+                    <div class="mini-contador">
+                        <span id="cont">0 cliques</span>
+                        <button id="btn-clique">Contador</button>
+                    </div>
+                </strong>
+                <p>Esse projeto foi relativamente simples e foi um projeto muito importante para entender um pouco da linguagem <strong>JavaScript</strong>,quebrei um pouco a cabeça para fazer a lógica por trás do projeto kkk mas no fim das contas conseguir termina-lo,esse projeto também é feito por grande parte dos iniciantes em programação e eu não fiquei de fora.</p>
+                <strong class="str">Aqui está uma imagem do projeto </strong>
+                <img src="img/contador-cliques.png" alt="Contador imagem">
+                <p>O projeto tem dois botões,um que irá contar a quantidades de cliques do usuario e outro e irá resetar os cliques contador.<a href="projetos/contandor_cliques/index.html">Clique aqui para acessar</a></p>
             </div>
-            <div class="div-replicar-tabsnews">
-                <p> ( 3 - ) Replicar do TabsNews </p>
-                <img src="img/replicar-tabsnews.png" alt="imagem tabsnews">
-                <p>Esse projeto foi até agora uns dos maiores projetos que já fiz até o momento,como está escrito no título do projeto,ele não foi uma ideía propria e sim uma tentativa de replicar de um site que utilizo muito para meus conhecimentos de programação ( <a href="https://www.tabnews.com.br/" target="_blank" rel="external">TabsNews</a> ),não repliquei o site inteiro e sim só uma uma pequena pagina do site,ja que o site é gigante ;-;. <a href="projetos/replicar_tabsnews/index.html" target="_blank" rel="external">
-                    Clique aqui para acessar 
-                </a> </p>
+            <div class="replicar-tabsnews">
+                <strong class="str" id="str">( 3 ) - Replicar do <a href="https://www.tabnews.com.br/" target="_blank" rel="external">Tabsnews </a></strong>
+                <p>Atualmente esse foi um dos maiores projetos que fiz até agora,utilizando <strong>HTML</strong> e <strong>CSS</strong>,eu também utilizei um pouco de <strong>JavaScript</strong>,mas em grande parte do site o codigo é feito com as duas tecnologias acima.</p>
+                <strong class="str" id="str">Aqui está uma imagem do projeto</strong>
+                <img src="img/replicar-tabsnews.png" alt="Imagem tabsnews">
+                <p>Como está escrito no título do projeto,esse site não é meu,mas foi muito importante para entender e melhora minhas habilidades nas tecnologias que estudo atualmente,eu utilizo muito esse site,o site é como se fosse mais uma rede social para os programadores,la você pode dizer quais suas dúvidas e responder dúvidas também. <a href="projetos/replicar_tabsnews/index.html">Clique aqui para acessar </a></p>
+            </div>
+            <div class="div-spotify">
+                <strong class="str">( 4 ) - Replicar do site do Spotify</strong>
+                <p>Esse projeto atualmente foi o maior projeto que fiz atualmente,ele é uma replicar do atual site do Spotify,e foi muito bom faze-lo,já que conseguir testa os limites das minhas habilidades e aprimora-las.A replicar não ficou 100% perfeita e ainda apresenta alguns bugs um pouco mais complexos que irei melhora a medida que for avançado com meus estudos </p>
+                <strong class="str">Aqui está uma imagem do projeto </strong>
+                <img src="img/sportify.img" alt="Imagem sportify">
+                <p><a href="projetos/replicar-spotify/index.html">Clique aqui para acessar</a></p>
             </div>
         </div>
-
-        <p class="p">Bem..Por enquanto esses são os projetos presentes no meu portífolio,ainda pretendo colocar mais projetos e melhora muito o portífolio a medida que eu for avançado com meus estudos,muito obrigado se você viu até que aqui,espero que tenha gostado :D </p>
-      </div>
-      
+        <p>Bem atualmente essa foi a minha área de projetos,eu ainda pretendo muito melhora meu portífolio a medida que eu for avançado nos meus estudos na programação,espero que tenha gostado :D.</p>
     </main>
     <footer>
-            <div class="div-footer-img">
-                <a href="https://www.instagram.com/alvinho.336/" target="_blank" rel="external"><img src="https://sites.ufpe.br/maps/wp-content/uploads/sites/61/2020/05/instagram-icone-icon-1.png" alt="Icone instagram" width="50" class="insta"></a>
-                <a href="https://www.facebook.com/Alvaro Gabriel/" target="_blank" rel="external">
-                    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook icone" width="50" class="face">
+        <ul class="ul-2">
+            <li>
+                <a href="https://www.facebook.com/Alvaro%20Gabriel/" target="_blank" rel="external">
+                    <img src="https://sites.ufpe.br/maps/wp-content/uploads/sites/61/2020/05/instagram-icone-icon-1.png" alt="Icone instagram" width="50">
                 </a>
-            </div>
-            <p>Site criado por <a href="#" target="_blank" rel="external">Alvaro Gabriel</a> ( &copy;Alvinho ) </p>
-        </div>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/alvinho.336/" target="_blank" rel="external">
+                    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Icone facebook" width="50">
+                </a>
+            </li>
+        </ul>
+        <p>Site criado por <a href="https://github.com/alvarogabriellimaramos" target="_blank" rel="external"> Alvaro Gabriel</a>
+        </p>
     </footer>
 </body>
 <script src="pagina-principal.js"></script>

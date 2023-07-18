@@ -1,215 +1,309 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
-:root{
-    --font-1:'Poppins',sans-serif;
-}
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-1);
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
 }
-
-header {
+header{
     position: sticky;
     top: -1px;
-    background-color: #000612;
+    z-index: 1;
     max-width: 100%;
     min-width: 500px;
     display: flex;
-    color: white;
-    padding: 10px;
+    align-items: center;
+    padding: 3vh;
+    background-color: #242041;
+    margin-bottom: 10px;
+}
+header .div-img-header{
+    width: 100%;
     text-align: center;
 }
-header h1 {
-    position: relative;
-    top: 20px;
-    width: 100%;
-    text-shadow: 2px 3px 5px black;
+.div-img-header img{
+    border-radius: 50%;
 }
-header > nav{
-    top: -1px;
+header h1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+    text-shadow: 1px 3px 5px black;
+}
+header nav{
     width: 100%;
     display: flex;
     justify-content: end;
-    font-size: 14px;
-   
 }
-nav > #ul-h {
-    position: relative;
-    border-radius: 5px;
-    list-style-type: none;
+nav .ul-1{
     display: flex;
     gap: 10px;
+    background-color: rgba(255, 255, 255, 0.068);
+    list-style: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 10px;
     margin: 10px;
-    background-color: rgba(255, 255, 255, 0.027);
-
 }
-header .div-photo{
+.ul-1 li {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   width: 50%;
-
-}
-header .myphoto{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    transition: 0.6s;
-}
-
-#ul-h > li {
-    position: relative;
-    margin: 10px;
-    border-radius: 5px;
-    transition: 0.7s;
-}
-#ul-h >li:hover{
-    background-color: rgba(255, 255, 255, 0.048);
-
-}
-#ul-h img{
-    position: relative;
-    bottom: -10px;
-    margin: 5px;
-}
-#ul-h a {
-    position: relative;
-    top: -8px;
-    text-decoration: none;
-    text-align: center;
+    margin: 10px ;
     padding: 10px;
-    color: #d6cfe2;
+    line-height: 1.2em;
+    text-align: center;
+    transition: 0.3s;
 }
-
-
-#ul-h #github{
-    background-color: #02205c;
-    border-radius: 50%;
+.ul-1 a {
+    position: relative;
+    font-size: 14px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: white;
 }
-#ul-h > #li-1{
-    background-color: white;
+.ul-1 span{
+    position: relative;
+    margin: 10px;
+    top: -8px;
 }
-#ul-h > #li-1:hover{
-    background-color: transparent;
-    filter: drop-shadow(0 0 0.80px white);
-}
-
-
-@media screen and (min-width:200px) and (max-width:700px) {
-    nav #ul-h{
-        display: inline-block;
-        background-color: rgba(255, 255, 255, 0.027);
-        margin-right: 25px;
-        margin-bottom: 10px;
-    }
-    header h1 {
-        position: relative;
-        top: 50px;
-    }
-    footer{
-        max-width:100%;
-        min-width: 500px;
-    }
-    
-}
-main{
-    max-width: 100%;
-    min-width: 500px;
-    padding: 50px;
-    line-height: 2.5rem;
-}
-main img{
-    box-shadow: 1px 0 3px black;
+.ul-1 li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:8%;
+    width: 0;
+    height: 100%;
+    transition:0.8s;
+    background:rgba(255, 255, 255, 0.171);
     border-radius: 10px;
 }
-main .historia{
-    margin-bottom: 15px;
+.ul-1 li:hover::before{
+    width: 100%;
 }
-.historia h2{
-    margin-bottom:10px ;
+.ul-1 li:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width:200px) and (max-width:850px){
+
+    nav .ul-1{
+        display: inline-block;
+        text-align: center;
+    }
+    main p {
+        line-height: 2.5em;
+    }
+}
+body{
+    background-color: #05d8e7;
+}
+main{
+    position: relative;
+    background-color: white;
+    max-width: 95%;
+    margin: auto;
+    min-width: 500px;
+    line-height: 3em;
+    box-shadow: 0px 0px 1px black;
+}
+main .redes-socias{
+    padding: 10px;
+    position: fixed;
+    right: 0;
+}
+
+
+main p {
+    padding: 10px;
+    font-size: 1.3em;
+}
+main .p::first-letter{
+    font-size: 1.8em;
+}
+main .h2{
+    font-size: 2em;
+    background-image: linear-gradient(to right,#122479,white);
+    padding: 1vh;
+}
+
+main > .projetos h2{
+    background-image: linear-gradient(to right,#fafa39,rgb(0, 0, 0));
+    padding: 1vh;
+}
+
+main .img-js{
+    animation: img-js-animation 4s infinite ease-in-out;
+}
+@keyframes img-js-animation{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.trocador-cores{
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.str{
+   
+    font-size: 1.2em;
+}
+.trocador-cores span {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    animation: trocar-cores 4s infinite ease-out;
+}
+.trocador-cores img {
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+    width: 100%;
+}
+.contador-cliques{
+    padding: 10px;
+    margin-top: 5px;
+}
+.contador-cliques .mini-contador{
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    width: 85px;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 5px;
+    border-radius: 10px;
+}
+.mini-contador span{
+    font-size: 14px;
+}
+.mini-contador button{
+    position: relative;
+    padding: 5px;
+    border: none;
+    background-color: rgb(248, 73, 73);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mini-contador button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.233);
+    height: 100%;
+    transition: 0.7s;
+}
+.mini-contador button:hover::before{
+    width: 100%;
+}
+.contador-cliques img{
+    margin-top: 10px;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+    width: 100%;
+}
+.replicar-tabsnews {
+    padding: 10px;
+}
+.replicar-tabsnews img{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
 }
 main a {
     text-decoration: none;
-    font-weight: bold;
+    background-color: rgb(163, 163, 248);
+    padding: 5px;
+    border-radius: 4px;
 }
-main p {
-    font-size: 1.2em;
-}
-main a:hover{
+main a:hover {
     text-decoration: underline;
 }
-.trocador-cores{
+.div-spotify {
+    padding: 10px;
+}
+.div-spotify img {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top:10px ;
+    border-radius: 10px;
+    box-shadow: 0 0 3px black;
 }
-
-main .h2{
-    background-image: linear-gradient( to right ,rgba(0, 0, 0, 0.151),black);
-    margin-bottom: 10px;
-    padding: 5px;
-}
-main .div-trocador-cores{
-    margin-bottom: 20px;
-    
-}
-
-.div-contador-cliques img {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.div-replicar-tabsnews img {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.div-replicar-tabsnews p {
-    margin-top: 10px;
-}
-main .p{
-    margin-top: 20px;
-}
-main .p::first-letter{
-    font-size: 1.5em;
+@keyframes trocar-cores{
+    0%{
+        background-color: black;
+    }
+    40%{
+        background-color: blue;
+    }
+    60%{
+        background-color: red;
+    }
+    80%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: black;
+    }
 }
 footer{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
     min-width: 500px;
-    background-color: black;
-    color: white;
+    margin-top: 20px;
     padding: 10px;
+    background-color: #101a35;
+    color: white;
+}
+footer p {
+    margin-top: 10px;
+}
+footer ul {
     display: flex;
-    align-items: center;
-    flex-direction: column;   
+    list-style: none;
+    gap: 10px;
 }
-footer img {
-    margin: 5px;
-}
-footer .face{
-    filter: drop-shadow(0 0 2px blue);
-}
-footer .insta{
-    filter: drop-shadow(0 0 2px pink);
-}
-footer span{
+.ul-2 li {
     position: relative;
-   
 }
-footer a {
-    position: relative;
+.ul-2 li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-image:linear-gradient(to right,#000000,#0044ff,white);
+    transition: 0.8s;
+    scale: 0;
+    
+}
+.ul-2 li:hover::before{
+    width: 100%;
+    scale: 1;
+}
+.ul-2 li:hover{
+    opacity: 0.6;
+}
+footer a{
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
-footer p {
-    text-align: center;
-    margin-top: 10px;
-}
-footer a:hover {
+footer a:hover{
     text-decoration: underline;
 }
