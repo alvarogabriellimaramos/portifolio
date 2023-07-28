@@ -471,7 +471,6 @@ main .btn-main{
         width: 100%;
         min-width: 100%;
     }
-    
 }
 .section-5 button{
     position: relative;
@@ -491,10 +490,8 @@ main .btn-main{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-    
+    }   
 }
-
 footer{
     position: relative;
     background-color: black;
@@ -513,7 +510,6 @@ footer div{
     left: 20px;
 
 }
-
 footer span{
     position: absolute;
     top: -20px;
@@ -582,5 +578,4 @@ footer li:hover{
         max-width: 100%;
         min-width: 500px;
     }
-    
 }
