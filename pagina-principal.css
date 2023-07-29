@@ -137,7 +137,9 @@ main > .projetos h2{
     background-image: linear-gradient(to right,#fafa39,rgb(0, 0, 0));
     padding: 1vh;
 }
-
+.sobre-mim h2{
+    border-radius: 5px;
+}
 main .img-js{
     animation: img-js-animation 4s infinite ease-in-out;
 }
@@ -152,7 +154,7 @@ main .img-js{
         opacity: 1;
     }
 }
-.trocador-cores{
+.pagina-login{
     margin-top: 20px;
     padding: 10px;
     
@@ -161,15 +163,8 @@ main .img-js{
    
     font-size: 1.2em;
 }
-.trocador-cores span {
-    background-color: black;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 5px;
-    animation: trocar-cores 4s infinite ease-out;
-}
-.trocador-cores img {
+
+.pagina-login img {
     margin-top: 15px;
     border-radius: 5px;
     box-shadow: 0 0 3px black;
@@ -247,23 +242,6 @@ main a:hover {
     margin-top:10px ;
     border-radius: 10px;
     box-shadow: 0 0 3px black;
-}
-@keyframes trocar-cores{
-    0%{
-        background-color: black;
-    }
-    40%{
-        background-color: blue;
-    }
-    60%{
-        background-color: red;
-    }
-    80%{
-        background-color: yellow;
-    }
-    100%{
-        background-color: black;
-    }
 }
 .div-feedbeck{
     padding: 2vh;
@@ -374,12 +352,17 @@ footer a:hover{
         min-width: 500px;
     }
 }
+@media(max-width:560px){
+    .div-feedbeck{
+        line-height: 1.1em;
+    }
+}
 ::-webkit-scrollbar{
     width: 10px;
     background-color: white;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #0044ff;
+    background-color: gray;
     border-radius: 10px;
     box-shadow: 1px 0 5px black;
 }
